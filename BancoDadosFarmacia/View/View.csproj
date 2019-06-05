@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{940A8FA8-0D0C-4A37-A8FB-9791A63C3E6A}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>View</RootNamespace>
     <AssemblyName>View</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,8 +54,56 @@
     <Compile Include="CadastroComestiveis.Designer.cs">
       <DependentUpon>CadastroComestiveis.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastroProdutosHigienicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroProdutosHigienicos.Designer.cs">
+      <DependentUpon>CadastroProdutosHigienicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroRemedios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroRemedios.Designer.cs">
+      <DependentUpon>CadastroRemedios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComestivelLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComestivelLista.Designer.cs">
+      <DependentUpon>ComestivelLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarComestiveis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarComestiveis.Designer.cs">
+      <DependentUpon>EditarComestiveis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarProdutosHigienicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarProdutosHigienicos.Designer.cs">
+      <DependentUpon>EditarProdutosHigienicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarRemedios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarRemedios.Designer.cs">
+      <DependentUpon>EditarRemedios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProdutosHigienicosLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProdutosHigienicosLista.Designer.cs">
+      <DependentUpon>ProdutosHigienicosLista.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemedioLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemedioLista.Designer.cs">
+      <DependentUpon>RemedioLista.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -70,6 +121,30 @@
   <ItemGroup>
     <EmbeddedResource Include="CadastroComestiveis.resx">
       <DependentUpon>CadastroComestiveis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroProdutosHigienicos.resx">
+      <DependentUpon>CadastroProdutosHigienicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroRemedios.resx">
+      <DependentUpon>CadastroRemedios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComestivelLista.resx">
+      <DependentUpon>ComestivelLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarComestiveis.resx">
+      <DependentUpon>EditarComestiveis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarProdutosHigienicos.resx">
+      <DependentUpon>EditarProdutosHigienicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarRemedios.resx">
+      <DependentUpon>EditarRemedios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProdutosHigienicosLista.resx">
+      <DependentUpon>ProdutosHigienicosLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemedioLista.resx">
+      <DependentUpon>RemedioLista.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
