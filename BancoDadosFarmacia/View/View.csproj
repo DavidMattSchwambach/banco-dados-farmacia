@@ -90,6 +90,12 @@
     <Compile Include="EditarRemedios.Designer.cs">
       <DependentUpon>EditarRemedios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProdutosHigienicosLista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditarRemedios.resx">
       <DependentUpon>EditarRemedios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProdutosHigienicosLista.resx">
       <DependentUpon>ProdutosHigienicosLista.cs</DependentUpon>
