@@ -58,6 +58,7 @@
             this.btnSalvar.TabIndex = 60;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // cbPrecisaReceita
             // 
@@ -108,6 +109,7 @@
             // 
             // cbxFaixa
             // 
+            this.cbxFaixa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxFaixa.FormattingEnabled = true;
             this.cbxFaixa.Items.AddRange(new object[] {
             "Preta",
@@ -175,7 +177,16 @@
             // 
             // cbxCategoria
             // 
+            this.cbxCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxCategoria.FormattingEnabled = true;
+            this.cbxCategoria.Items.AddRange(new object[] {
+            "Analgésico",
+            "Anfetamina",
+            "Antiácido",
+            "Antibiótico",
+            "Antídoto",
+            "Aspirina",
+            "Barbitúrico"});
             this.cbxCategoria.Location = new System.Drawing.Point(12, 181);
             this.cbxCategoria.Name = "cbxCategoria";
             this.cbxCategoria.Size = new System.Drawing.Size(186, 21);

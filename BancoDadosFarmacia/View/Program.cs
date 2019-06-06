@@ -19,7 +19,7 @@ namespace View
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ComestivelLista());
+            Application.Run(new RemedioLista());
         }
     }
 }
