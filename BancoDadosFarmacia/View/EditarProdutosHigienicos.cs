@@ -54,6 +54,11 @@ namespace View
             try
             {
                 higienico.Preco = Convert.ToDouble(txtPreco.Text);
+                if (higienico.Preco < 0)
+                {
+                    MessageBox.Show("Valor nao aceita número menor que 0");
+                    return;
+                }
             }
             catch
             {

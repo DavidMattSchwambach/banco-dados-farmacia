@@ -39,6 +39,7 @@
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.dtpDataVencimento = new System.Windows.Forms.DateTimePicker();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblNome
@@ -96,28 +97,28 @@
             this.txtNome.Location = new System.Drawing.Point(13, 34);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(207, 20);
-            this.txtNome.TabIndex = 8;
+            this.txtNome.TabIndex = 1;
             // 
             // txtValor
             // 
-            this.txtValor.Location = new System.Drawing.Point(13, 96);
+            this.txtValor.Location = new System.Drawing.Point(12, 96);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(207, 20);
-            this.txtValor.TabIndex = 9;
+            this.txtValor.Size = new System.Drawing.Size(188, 20);
+            this.txtValor.TabIndex = 2;
             // 
             // txtQuantidade
             // 
             this.txtQuantidade.Location = new System.Drawing.Point(13, 217);
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(207, 20);
-            this.txtQuantidade.TabIndex = 10;
+            this.txtQuantidade.TabIndex = 4;
             // 
             // txtMarca
             // 
             this.txtMarca.Location = new System.Drawing.Point(13, 279);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(207, 20);
-            this.txtMarca.TabIndex = 11;
+            this.txtMarca.TabIndex = 5;
             // 
             // dtpDataVencimento
             // 
@@ -125,7 +126,7 @@
             this.dtpDataVencimento.Location = new System.Drawing.Point(12, 156);
             this.dtpDataVencimento.Name = "dtpDataVencimento";
             this.dtpDataVencimento.Size = new System.Drawing.Size(211, 20);
-            this.dtpDataVencimento.TabIndex = 12;
+            this.dtpDataVencimento.TabIndex = 3;
             // 
             // btnSalvar
             // 
@@ -133,16 +134,28 @@
             this.btnSalvar.Location = new System.Drawing.Point(9, 327);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(211, 53);
-            this.btnSalvar.TabIndex = 13;
+            this.btnSalvar.TabIndex = 6;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(200, 99);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(23, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "R$";
             // 
             // CadastroComestiveis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(238, 390);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.dtpDataVencimento);
             this.Controls.Add(this.txtMarca);
@@ -173,5 +186,6 @@
         private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.DateTimePicker dtpDataVencimento;
         private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Label label1;
     }
 }

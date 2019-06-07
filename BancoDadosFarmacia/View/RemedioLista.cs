@@ -39,6 +39,11 @@ namespace View
 
         public void btnApagar_Click(object sender, EventArgs e)
         {
+            if (dataGridView1.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Selecione uma linha para apagar");
+                return;
+            }
             int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
 
             RemedioRepositorio repositorio = new RemedioRepositorio();

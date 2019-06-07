@@ -41,6 +41,7 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSalvar
@@ -49,7 +50,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(8, 382);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(211, 53);
-            this.btnSalvar.TabIndex = 26;
+            this.btnSalvar.TabIndex = 6;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -60,35 +61,35 @@
             this.dtpDataVencimento.Location = new System.Drawing.Point(11, 211);
             this.dtpDataVencimento.Name = "dtpDataVencimento";
             this.dtpDataVencimento.Size = new System.Drawing.Size(211, 20);
-            this.dtpDataVencimento.TabIndex = 25;
+            this.dtpDataVencimento.TabIndex = 3;
             // 
             // txtMarca
             // 
             this.txtMarca.Location = new System.Drawing.Point(12, 334);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(207, 20);
-            this.txtMarca.TabIndex = 24;
+            this.txtMarca.TabIndex = 5;
             // 
             // txtQuantidade
             // 
             this.txtQuantidade.Location = new System.Drawing.Point(12, 272);
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(207, 20);
-            this.txtQuantidade.TabIndex = 23;
+            this.txtQuantidade.TabIndex = 4;
             // 
             // txtValor
             // 
             this.txtValor.Location = new System.Drawing.Point(12, 151);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(207, 20);
-            this.txtValor.TabIndex = 22;
+            this.txtValor.Size = new System.Drawing.Size(187, 20);
+            this.txtValor.TabIndex = 2;
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(12, 89);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(207, 20);
-            this.txtNome.TabIndex = 21;
+            this.txtNome.TabIndex = 1;
             // 
             // lblMarca
             // 
@@ -134,7 +135,7 @@
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(8, 71);
+            this.lblNome.Location = new System.Drawing.Point(9, 70);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(49, 16);
             this.lblNome.TabIndex = 15;
@@ -154,17 +155,29 @@
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(77, 25);
+            this.lblId.Location = new System.Drawing.Point(65, 26);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(16, 16);
             this.lblId.TabIndex = 27;
             this.lblId.Text = "0";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(199, 154);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(23, 13);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "R$";
+            // 
             // EditarComestiveis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(234, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.dtpDataVencimento);
@@ -200,5 +213,6 @@
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.Label label1;
     }
 }

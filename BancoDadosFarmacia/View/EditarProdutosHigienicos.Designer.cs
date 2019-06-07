@@ -37,6 +37,7 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSalvar
@@ -45,7 +46,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(12, 265);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(165, 94);
-            this.btnSalvar.TabIndex = 13;
+            this.btnSalvar.TabIndex = 4;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -54,8 +55,8 @@
             // 
             this.txtPreco.Location = new System.Drawing.Point(12, 203);
             this.txtPreco.Name = "txtPreco";
-            this.txtPreco.Size = new System.Drawing.Size(165, 20);
-            this.txtPreco.TabIndex = 12;
+            this.txtPreco.Size = new System.Drawing.Size(142, 20);
+            this.txtPreco.TabIndex = 3;
             // 
             // lblPreco
             // 
@@ -79,7 +80,7 @@
             this.cbxCategoria.Location = new System.Drawing.Point(12, 136);
             this.cbxCategoria.Name = "cbxCategoria";
             this.cbxCategoria.Size = new System.Drawing.Size(165, 21);
-            this.cbxCategoria.TabIndex = 10;
+            this.cbxCategoria.TabIndex = 2;
             // 
             // lblCategoria
             // 
@@ -96,7 +97,7 @@
             this.txtNome.Location = new System.Drawing.Point(12, 75);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(165, 20);
-            this.txtNome.TabIndex = 8;
+            this.txtNome.TabIndex = 1;
             // 
             // lblNome
             // 
@@ -128,11 +129,23 @@
             this.lblCodigo.TabIndex = 28;
             this.lblCodigo.Text = "Código:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(154, 206);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(23, 13);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "R$";
+            // 
             // EditarProdutosHigienicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(187, 367);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.btnSalvar);
@@ -160,5 +173,6 @@
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label lblCodigo;
+        private System.Windows.Forms.Label label1;
     }
 }

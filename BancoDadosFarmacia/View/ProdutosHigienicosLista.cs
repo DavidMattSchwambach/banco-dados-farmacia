@@ -27,10 +27,11 @@ namespace View
             for (int i = 0; i < higienicos.Count; i++)
             {
                 Higienico higienico = higienicos[i];
+                string valorTexto = $"R$ {higienico.Preco}";
                 dataGridView1.Rows.Add(
                     new object[]
                     {
-                        higienico.Id, higienico.Nome, higienico.Categoria, higienico.Preco
+                        higienico.Id, higienico.Nome, higienico.Categoria, valorTexto
                     }
                 );
             }
@@ -38,6 +39,11 @@ namespace View
 
         private void btnApagar_Click(object sender, EventArgs e)
         {
+            if (dataGridView1.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Selecione uma linha para apagar");
+                return;
+            }
             int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
 
             HigienicoRepositorio repositorio = new HigienicoRepositorio();

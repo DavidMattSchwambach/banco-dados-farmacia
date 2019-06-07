@@ -11,7 +11,7 @@ namespace Repository
 {
     public class HigienicoRepositorio
     {
-        string CadeiaConexao = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\david\Documents\BancoDados03.mdf;Integrated Security=True;Connect Timeout=30";
+        string CadeiaConexao = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\65972\Documents\ExeploBancoDados02.mdf;Integrated Security=True;Connect Timeout=30";
 
         public DataTable DataTable { get; private set; }
 
@@ -111,7 +111,7 @@ namespace Repository
 
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexao;
-            comando.CommandText = "UPDATE higienicos SET nome = @NOME, categoria = @CATEGORIA, preco = @PRECO";
+            comando.CommandText = "UPDATE higienicos SET nome = @NOME, categoria = @CATEGORIA, preco = @PRECO  WHERE id = @ID";
             comando.Parameters.AddWithValue("@NOME", higienico.Nome);
             comando.Parameters.AddWithValue("@CATEGORIA", higienico.Categoria);
             comando.Parameters.AddWithValue("@PRECO", higienico.Preco);

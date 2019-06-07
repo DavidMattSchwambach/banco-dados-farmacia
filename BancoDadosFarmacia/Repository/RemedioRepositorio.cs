@@ -11,7 +11,7 @@ namespace Repository
 {
      public class RemedioRepositorio
     {
-        string CadeiaConexao = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\david\Documents\BancoDados03.mdf;Integrated Security=True;Connect Timeout=30";
+        string CadeiaConexao = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\65972\Documents\ExeploBancoDados02.mdf;Integrated Security=True;Connect Timeout=30";
 
         public DataTable DataTable { get; private set; }
 
@@ -132,7 +132,7 @@ namespace Repository
 
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexao;
-            comando.CommandText = "UPDATE remedios SET generico = @GENERICO, nome = @NOME, categoria = @CATEGORIA, solido = @SOLIDO, contra_indicacoes = @CONTRA_INDICACOES, bula = @BULA, faixa = @FAIXA, precisa_receita = @PRECISA_RECEITA";
+            comando.CommandText = "UPDATE remedios SET generico = @GENERICO, nome = @NOME, categoria = @CATEGORIA, solido = @SOLIDO, contra_indicacoes = @CONTRA_INDICACOES, bula = @BULA, faixa = @FAIXA, precisa_receita = @PRECISA_RECEITA WHERE id = @ID";
 
             comando.Parameters.AddWithValue("@GENERICO", remedio.Generico);
             comando.Parameters.AddWithValue("@NOME", remedio.Nome);

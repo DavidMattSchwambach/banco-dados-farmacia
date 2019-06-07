@@ -27,10 +27,11 @@ namespace View
             for (int i = 0; i < comestiveis.Count; i++)
             {
                 Comestivel comestivel = comestiveis[i];
+                string valorTexto = $"R$ {comestivel.Valor}";
                 dataGridView1.Rows.Add(
                     new object[]
                     {
-                        comestivel.Id, comestivel.Nome, comestivel.Valor, comestivel.DataVencimento, comestivel.Quantidade, comestivel.Marca
+                        comestivel.Id, comestivel.Nome, valorTexto, comestivel.DataVencimento, comestivel.Quantidade, comestivel.Marca
                     }
                 );
             }
@@ -38,6 +39,11 @@ namespace View
 
         public void btnApagar_Click(object sender, EventArgs e)
         {
+            if (dataGridView1.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Selecione uma linha para apagar");
+                return;
+            }
                 int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
 
                 ComestivelRepositorio repositorio = new ComestivelRepositorio();

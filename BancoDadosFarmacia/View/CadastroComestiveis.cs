@@ -33,8 +33,12 @@ namespace View
 
             try
             {
-                comestivel.Valor = Convert.ToDouble(txtValor.Text); 
-
+                comestivel.Valor = Convert.ToDouble(txtValor.Text);
+                if (comestivel.Valor < 0)
+                {
+                    MessageBox.Show("Valor nao aceita número menor que 0");
+                    return;
+                }
             }
             catch
             {

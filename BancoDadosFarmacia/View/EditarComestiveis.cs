@@ -27,7 +27,8 @@ namespace View
             txtValor.Text = comestivel.Valor.ToString();
             dtpDataVencimento.Text = comestivel.DataVencimento.ToString();
             txtQuantidade.Text = comestivel.Quantidade.ToString();
-            txtMarca.Text = comestivel.Marca;
+            txtMarca.Text = comestivel.Marca.ToString();
+            lblId.Text = comestivel.Id.ToString();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -44,6 +45,11 @@ namespace View
             try
             {
                 comestivel.Valor = Convert.ToDouble(txtValor.Text);
+                if (comestivel.Valor < 0)
+                {
+                    MessageBox.Show("Valor nao aceita número menor que 0");
+                    return;
+                }
             }
             catch
             {
