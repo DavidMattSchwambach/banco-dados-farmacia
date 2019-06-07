@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lblNome = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.cbxCategoria = new System.Windows.Forms.ComboBox();
             this.txtPreco = new System.Windows.Forms.TextBox();
@@ -47,12 +47,12 @@
             this.lblNome.TabIndex = 0;
             this.lblNome.Text = "Nome";
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(165, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtNome.Location = new System.Drawing.Point(15, 45);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(165, 20);
+            this.txtNome.TabIndex = 1;
             // 
             // lblCategoria
             // 
@@ -66,6 +66,7 @@
             // 
             // cbxCategoria
             // 
+            this.cbxCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxCategoria.FormattingEnabled = true;
             this.cbxCategoria.Items.AddRange(new object[] {
             "Sabonete",
@@ -103,6 +104,7 @@
             this.btnSalvar.TabIndex = 6;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // CadastroProdutosHigienicos
             // 
@@ -114,7 +116,7 @@
             this.Controls.Add(this.lblPreco);
             this.Controls.Add(this.cbxCategoria);
             this.Controls.Add(this.lblCategoria);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lblNome);
             this.Name = "CadastroProdutosHigienicos";
             this.Text = "CadastroProdutosHigienicos";
@@ -126,7 +128,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.ComboBox cbxCategoria;
         private System.Windows.Forms.TextBox txtPreco;

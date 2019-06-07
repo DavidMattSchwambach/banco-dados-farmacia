@@ -12,7 +12,7 @@ namespace Repository
 
     public class ComestivelRepositorio
     {
-        string CadeiaConexao = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\65972\Documents\ExeploBancoDados02.mdf;Integrated Security=True;Connect Timeout=30";
+        string CadeiaConexao = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\david\Documents\BancoDados03.mdf;Integrated Security=True;Connect Timeout=30";
         public DataTable DataTable { get; private set; }
 
         public void Inserir(Comestivel comestivel)

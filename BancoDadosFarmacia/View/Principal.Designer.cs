@@ -38,18 +38,18 @@
             this.btnComestivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnComestivel.Location = new System.Drawing.Point(12, 12);
             this.btnComestivel.Name = "btnComestivel";
-            this.btnComestivel.Size = new System.Drawing.Size(165, 94);
+            this.btnComestivel.Size = new System.Drawing.Size(251, 261);
             this.btnComestivel.TabIndex = 14;
-            this.btnComestivel.Text = " Comestivel";
+            this.btnComestivel.Text = " Comestiveis";
             this.btnComestivel.UseVisualStyleBackColor = true;
             this.btnComestivel.Click += new System.EventHandler(this.btnComestivel_Click);
             // 
             // btnHigienicos
             // 
             this.btnHigienicos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHigienicos.Location = new System.Drawing.Point(205, 12);
+            this.btnHigienicos.Location = new System.Drawing.Point(269, 12);
             this.btnHigienicos.Name = "btnHigienicos";
-            this.btnHigienicos.Size = new System.Drawing.Size(165, 94);
+            this.btnHigienicos.Size = new System.Drawing.Size(252, 261);
             this.btnHigienicos.TabIndex = 15;
             this.btnHigienicos.Text = "Produtos Higienicos";
             this.btnHigienicos.UseVisualStyleBackColor = true;
@@ -58,11 +58,11 @@
             // btnRemedios
             // 
             this.btnRemedios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemedios.Location = new System.Drawing.Point(398, 12);
+            this.btnRemedios.Location = new System.Drawing.Point(527, 12);
             this.btnRemedios.Name = "btnRemedios";
-            this.btnRemedios.Size = new System.Drawing.Size(165, 94);
+            this.btnRemedios.Size = new System.Drawing.Size(243, 261);
             this.btnRemedios.TabIndex = 16;
-            this.btnRemedios.Text = "Remedios";
+            this.btnRemedios.Text = "Remédios";
             this.btnRemedios.UseVisualStyleBackColor = true;
             this.btnRemedios.Click += new System.EventHandler(this.btnRemedios_Click);
             // 
@@ -70,7 +70,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(780, 288);
             this.Controls.Add(this.btnRemedios);
             this.Controls.Add(this.btnHigienicos);
             this.Controls.Add(this.btnComestivel);
